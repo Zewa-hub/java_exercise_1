@@ -32,10 +32,6 @@ public class Launcher {
             else
             {
                 current.run();
-                if (current.name().equals("quit"))
-                {
-                    shouldQuit = true;
-                }
             }
         }while (shouldQuit == false);
     }
