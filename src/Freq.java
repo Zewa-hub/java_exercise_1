@@ -12,9 +12,9 @@ public class Freq implements Command{
         System.out.print("Donne un chemin de fichier : ");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
-        freq(name);
+        exec_f(name);
     }
-    public static void freq(String path)
+    public static void exec_f(String path)
     {
         try {
             String file = java.nio.file.Files.readString(Paths.get(path));

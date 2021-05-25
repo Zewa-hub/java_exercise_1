@@ -9,16 +9,16 @@ public class Fibo implements Command{
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
         try {
-            System.out.println(fibo(Integer.valueOf(name)));
+            System.out.println(exec(Integer.valueOf(name)));
         } catch (Exception e) {
             System.out.println("Error :" + e.toString());
 
         }
     }
-        public static int fibo(int n)
+        public static int exec(int n)
         {
             if (n < 2) return(n);
-            return(fibo(n-2) + fibo(n-1) );
+            return(exec(n-2) + exec(n-1) );
         }
 
     @Override
